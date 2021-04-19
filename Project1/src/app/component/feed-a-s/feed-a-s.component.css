@@ -1,0 +1,29 @@
+/*.feed{
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    
+}
+
+.message{
+    flex-direction: column;
+    margin: 10px 0;
+}
+body{
+    margin-top: 10%;
+    
+    max-width: 100%;
+    /*margin-left: 200px;
+}*/
+
+p{
+    background-color: blueviolet;
+    position: fixed;
+    margin-top:-50px;
+    z-index: 100;
+    
+}
+.heading{
+    max-width: 300px;
+    max-height: 80%
+}

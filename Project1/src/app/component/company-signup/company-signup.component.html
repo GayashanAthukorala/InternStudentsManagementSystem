@@ -1,0 +1,58 @@
+
+<form (ngSubmit)=" onSubmit(formone)" #formone="ngForm">
+  <h2>IMS SIGN UP</h2>
+  <div class="container" >
+      
+    <div class="row">
+      <div class="column1">
+        <label for="cname"><b id="copanyname">Company Name : </b></label><br>
+        <label for="cpname"><b id="cpname">Contact Person Name : </b></label><br>
+        <label for="location"><b id="location">Location : </b></label><br>
+        <label for="contactno"><b id="contactno">Contact No : </b></label><br>
+        <label for="email"><b id="email">Email : </b></label><br>
+        <label for="psw"><b>Password :</b></label><br>
+      </div>
+      <div class="column2">
+        <input type="text" placeholder="Enter Company Name" name="cname" [(ngModel)]="copanyname"  required><br>
+        <input type="text" placeholder="Enter Contact Person Name" name="cpname" [(ngModel)]="cpname" ><br>
+        <input type="text" placeholder="Enter Location" name="location" [(ngModel)]="location" ><br>
+        <input type="number" placeholder="Enter Contact No" name="contactno" [(ngModel)]="contactno" ><br>       
+        <input type="text" placeholder="Enter your email" name="email" [(ngModel)]="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$">
+        <div *ngIf="email.errors?.pattern">
+          <label class="validation-message">Invalid email address.</label>
+          <br>
+      </div>
+      
+        <input matInput type="password" placeholder="Enter Password" name="psw" required [(ngModel)]="password"  [type]="!hide ? 'password' : 'text' "id="password">
+        <mat-icon matSuffix (click)="hide = !hide">{{!hide ? 'visibility_off' : 'visibility'}}</mat-icon><br>      
+      </div>
+    </div>
+  
+      <button id="add" type="submit"  >Add</button>
+      <!-- <button mat-button id="add" type="submit" >Add</button> -->
+      <button id="clear" type="button" (click)="copanyname='';cpname='';location='';contactno='';email='';password=''">Clear</button><br>
+  
+  </div>
+<lib-ngx-notification></lib-ngx-notification>
+
+<!-- <div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Company Name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Contact Person Name"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Location"></textarea>
+  </mat-form-field>
+ 
+ 
+
+
+  <button id="add" type="submit"  >Add</button>
+  <button id="clear" type="button" (click)="copanyname='';cpname='';location='';contactno='';email='';password=''">Clear</button><br>
+  <lib-ngx-notification></lib-ngx-notification>
+</div> -->
+  </form>

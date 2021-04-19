@@ -1,0 +1,47 @@
+<body>
+    <div class="menu" style="position: fixed; z-index: 10;">
+
+        <ul>
+            <li> <a style="background-color: black;color: white;">IMS @ FIT</a></li>
+            <!-- <li><a routerLink="./studentAdd" routerLinkActive="active">Add</a></li> -->
+            <li><a routerLink="./dashboardStudent" routerLinkActive="active" >HOME</a> </li>
+
+            <li><a (click)="studentAdd()" routerLinkActive="active">ADD</a></li>
+            <li><a routerLink="./studentEdit" routerLinkActive="active">EDIT</a></li>
+            <li><a routerLink="./studentView" routerLinkActive="active">VIEW</a></li>
+            <!-- <li><a routerLink="./studentCompanyList" routerLinkActive="active">Organization List</a></li> -->
+            <li><a routerLink="./studentConfirm" routerLinkActive="active" >CONFORMATION</a></li>
+            <!-- <li><a routerLink="./studentReport" routerLinkActive="active">REPORTS</a></li> -->
+            <li><a routerLink="./feedback" routerLinkActive="active">FEEDBACK</a></li>
+            <li><a routerLink="./chat-room" routerLinkActive="active" (click)=clearNotification()>
+                <span class="msg" *ngIf="msgCount > 0" ><span class="msg">new </span></span>
+                MESSAGE</a></li>
+
+            <!-- <li><a >Message</a></li> -->
+            <!-- <li><a routerLink="./studentSetting" routerLinkActive="active">SETTINGS</a></li> -->
+            <div class="topnav-right-">
+            <li class="user">
+                <span style="color: white;">
+                    <mat-icon class="icon" color="white">account_circle</mat-icon> 
+                    {{ loger }}
+                </span>
+            </li>
+            <li class="button">
+                <button mat-raised-button style="background-color:white" (click)="logout()">
+                    <mat-icon color="black">settings_power</mat-icon> 
+                    Logout
+                </button>
+
+            </li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="col-sm-19">
+        <div style="padding:1px 16px; position: relative;overflow: hidden;">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</body>
+
+

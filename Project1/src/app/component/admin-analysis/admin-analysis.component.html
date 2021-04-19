@@ -1,0 +1,54 @@
+<p></p>
+
+
+<mat-grid-list cols="20" rowHeight="100px">
+
+  <mat-grid-tile class="title" colspan="5" rowspan="4">
+  </mat-grid-tile>
+    
+  <mat-grid-tile class="chart" colspan="15" rowspan="4">
+    <fusioncharts
+      [width]="width"
+      [height]="height"
+      [type]="type"
+      [dataFormat]="dataFormat"
+      [dataSource]="datasource">
+    </fusioncharts>
+    <br><br><br><br><br><br><br>
+    <h4>Last Batch : {{ max-1 }} </h4>
+    <!-- <br>
+    <div class="w3-quarter">              
+        <div class="w3-right">
+         <h4>Last Batch</h4>
+         <h3> &nbsp;&nbsp;&nbsp;&nbsp;{{ max-1 }} </h3>
+        </div>              
+      </div> -->
+  </mat-grid-tile>
+    
+  <!-- <mat-grid-tile class="title" colspan="1" rowspan="4">
+
+      <div class="w3-quarter">              
+          <div class="w3-right">
+           <h4>Last Batch</h4>
+           <h3> &nbsp;&nbsp;&nbsp;&nbsp;{{ max-1 }} </h3>
+          </div>              
+        </div>
+  </mat-grid-tile> -->
+
+  <br>
+
+  <mat-grid-tile class="title" colspan="5" rowspan="4">
+  </mat-grid-tile>
+
+  <mat-grid-tile class="chart" colspan="15" rowspan="4">
+    <fusioncharts 
+      width="1000" 
+      height="400"
+      type="pie3d"
+      [dataSource]=dataSource >
+    </fusioncharts>
+  </mat-grid-tile>
+
+ 
+
+  </mat-grid-list>

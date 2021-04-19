@@ -1,0 +1,96 @@
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 20%;
+    /* min-width: 200px;   */
+    /* position: fixed;  */
+}
+
+.column2 {
+    float: left;
+     /* position: fixed;  */
+    width: 60%;    
+    /* margin-left: 300px; */
+}
+.column3 {
+    float: right;
+    background-color: rgb(216, 216, 215);
+    width: 20%;  
+    height: 570px;  
+   
+}
+.img{
+    width: 20%;
+
+}
+.split {
+    height: 100%;
+    /* margin-top: 5%; */
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  
+  .u{
+      position: fixed;
+      z-index: 0;
+      margin-top: 54px;
+      margin-left: 15px;
+     
+  }
+   .m{
+    position: relative;
+    z-index: 0;
+    /* margin-top: 150px;
+    overflow-y:scroll; */
+    /* background: red; */
+    
+} 
+.userList{
+    margin-top: 20px;
+    /* position: relative; */
+
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  }
+  .middle{
+    display: flex;
+    justify-content: center;
+    margin:auto auto;
+  }

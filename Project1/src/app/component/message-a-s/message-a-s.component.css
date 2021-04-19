@@ -1,0 +1,53 @@
+
+.loggedUser{
+        
+    
+    float: right;
+    color: rgb(122, 121, 121);
+    /* display:inline-block; */
+  clear: both;
+  padding: 5px;
+  border-radius: 30px;
+  margin-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  
+}
+.msgL{
+    background: #0084ff;
+    float: right;
+    color: rgb(3, 3, 3);
+    /* display:inline-block; */
+  clear: both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+  margin-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.NotLoggedUser{
+    float: left;
+    color: rgb(122, 121, 121);
+    /* display:inline-block; */
+  clear: both;
+  padding: 5px;
+  border-radius: 30px;
+  /* margin-bottom: 20px; */
+  font-family: Helvetica, Arial, sans-serif;
+}
+.msgN{
+    background: #c4c4c5;
+    float: left;
+    color: rgb(2, 2, 2);
+    /* display:inline-block; */
+  clear: both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+  /* margin-bottom: 20px; */
+  font-family: Helvetica, Arial, sans-serif;
+}
+  

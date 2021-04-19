@@ -1,0 +1,22 @@
+<body>
+
+    <mat-grid-list class="container" cols="4" rowHeight="53px">
+        <mat-grid-tile class="menu" colspan="4" rowspan="1"></mat-grid-tile>
+    </mat-grid-list>
+
+    <div class="column1">
+        <app-user-list></app-user-list>
+    </div>
+
+        <div class="column2">
+            <app-chat-a-s></app-chat-a-s>
+        </div>
+
+        <div class="column3">
+            <img class ="middle" style=" width:100px; height:100px;" src="https://ptetutorials.com/images/user-profile.png">
+            <br><br>
+            <b class ="middle" >{{ userName}}</b>
+            <br> <br>
+            <button class="button1" type="button" (click)="delete(userName)">Clear Conversation</button>
+
+        </div>

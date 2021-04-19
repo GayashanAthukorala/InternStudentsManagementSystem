@@ -1,0 +1,79 @@
+<div  class="name"style="background :rgb(224, 223, 223);  height:70px;">
+  <div>
+    <!-- <a href="#destination">Back to top</a> -->
+    <img style=" margin-top:5px; margin-left:5px; width:60px; height:60px;" src="https://ptetutorials.com/images/user-profile.png"
+      alt="sunil">
+    <b>{{userName}}</b>
+    <!-- <h6 >Username</h6> -->
+  </div>
+</div>
+<div class="test" style="background :rgb(250, 249, 249); height:430px;overflow-y:scroll;">
+
+
+  <div class="feedWrapper">
+    <app-feed-a-s></app-feed-a-s>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<div style="background :rgb(224, 223, 223);  ">
+  
+  <div class="type_msg" >
+    <div class="input_msg_write">
+      <!-- <table>
+        <tr *ngFor ="let user of users"></tr>
+      </table> -->
+      <input [(ngModel)]="message" (click)="clear(); " class="write_msg" placeholder="Type a message" (keydown)="handleSubmit($event)" />
+      <button class="msg_send_btn" (click)="send(); " type="button"></button>
+    </div>
+  </div>
+</div>
+
+<!-- <mat-grid-list class="container" style="width:100%" cols="1" rowHeight="50px" style="background :rgb(29, 206, 109)">
+  <mat-grid-tile class="name" colspan="1" rowspan="1" style="background :rgb(214, 114, 47)">
+
+
+    <div class="name">
+      <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+      {{userN}}
+
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile  class="msgsss" colspan="1" rowspan="5" style="background :rgb(235, 40, 147)">
+    <div class="feedWrapper">
+      <app-feed-a-s></app-feed-a-s>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-grid-tile>
+
+  <mat-grid-tile class="typing" colspan="1" rowspan="1" style="background :rgb(40, 196, 235)">
+
+    <div class="type_msg">
+      <div class="input_msg_write">
+        <input [(ngModel)]="message" class="write_msg" placeholder="Type a message" (keydown)="handleSubmit($event)" />
+        <button class="msg_send_btn" (click)=send() type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>  -->
+
+
+
+<!-- <div class="container" style="background :rgb(40, 196, 235)">
+  <div class="name">
+    <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+    {{userN}}
+
+  </div>
+
+  <div class="feedWrapper">
+    <app-feed-a-s></app-feed-a-s>
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="type_msg">
+    <div class="input_msg_write">
+      <input [(ngModel)]="message" class="write_msg" placeholder="Type a message" (keydown)="handleSubmit($event)" />
+      <button class="msg_send_btn" (click)=send() type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div> -->
